@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+
+    #suggestions li {
+        padding: 10px;
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+
+    <form class="search-form">
+        <input type="text" id="search" placeholder="name or cats"><br>
+
+        <table style="width:80%" id="suggestions">
+ 
+            <tr id="add"></tr>
+        </table>
+    </form>
+
+
+    <script src="js/connection-index.js"></script>
+</body>
+
+</html>
