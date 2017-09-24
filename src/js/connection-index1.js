@@ -2,6 +2,8 @@ document.getElementById('getText').addEventListener('click', getText);
 document.getElementById('getUsers').addEventListener('click', getUsers);
 document.getElementById('getPosts').addEventListener('click', getPosts);
 
+// método text(), recupera a informação retornada pela requisição, no formato texto.
+
 function getText() {
     fetch('/src/sample.txt')
         .then((res) => res.text())
@@ -11,6 +13,7 @@ function getText() {
         .catch((err) => console.log(err));
 }
 
+//método json(), retorna uma promise.
 
 function getUsers() {
     fetch('users.json')
